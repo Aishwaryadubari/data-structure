@@ -16,5 +16,18 @@ public static void main (String[] args)
 	myqueue.enqueue(5);
 	myqueue.dequeue();
 	
+	
+	BinarySearchTree mytree= new BinarySearchTree();
+	mytree.insert(47);
+	mytree.insert(21);
+	mytree.insert(76);
+	mytree.insert(18);
+	mytree.insert(52);
+	mytree.insert(82);
+	
+	mytree.insert(27);
+	System.out.println("BFS: "+mytree.BFS());
+	
+	System.out.println("DFS: "+mytree.DFSPreOrder());
 }
 }
